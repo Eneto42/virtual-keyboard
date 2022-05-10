@@ -1,0 +1,147 @@
+body{
+	padding:0px;
+	margin:0px;
+	
+}
+
+.wrapper{
+	margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 1020px;
+    background-color: #fff;
+    font-family: sans-serif, arial;
+    font-size: 9pt;
+}
+
+.keyboard{
+	border-style: solid;
+    border-width: 1px;
+    max-width: 640px;
+    width: 100%;
+    margin: 0px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border-radius: 5px;
+	border-color: #e23e73;
+	user-select: none;
+}
+
+.output{
+	border-style: solid;
+    border-color: 0;
+    border-width: 1px;
+    max-width: 640px;
+    min-height: 100px;
+    width: 100%;
+    overflow-y: auto;
+    resize: vertical;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0px;
+	margin-bottom: 10px;
+    border-radius: 5px;
+	border-color: #e23e73;
+	padding: 5px;
+	font-size: 9pt;
+}
+
+.output:focus{
+	outline-style:none;
+}
+
+.key-row{
+	display:flex;
+	justify-content:space-between;
+	border-style:none;
+	user-select: none;
+}
+
+.key-button{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	cursor:default;
+	width:30px;
+	height:30px;
+	flex-basis:35px;
+	margin:3px;
+	overflow:hidden;
+	text-align:center;
+	border-style:solid;
+	border-radius:3px;
+	background-color:#ffd5df;
+	color: #e23e73;
+	border-color:#d7a4ad;
+	transition-duration: 300ms;
+    transition-property: transform;
+    transition-timing-function: linear;
+	transform: scale(1);
+	border-top-color: #fedfe5;
+	border-left-color: #fedfe5;
+	user-select: none;
+
+}
+
+.key-button-active{
+	color: #ffd5df;
+	background-color:#e23e73;
+	transform: scale(0.85);
+	border-color:#d7a4ad;
+	border-bottom-color: #fedfe5;
+	border-right-color: #fedfe5;
+
+}
+
+.key-button:hover{
+	border-color:#d7a4ad;
+	border-bottom-color: #fedfe5;
+	border-right-color: #fedfe5;
+}
+
+.help {
+	margin-top: 15px;
+	text-align: center;
+	color: #e23e73;
+}
+
+#Space{
+	flex-basis:270px;
+	flex-grow:1;
+}
+#LeftShift{
+	flex-basis:100px;
+	flex-grow:1;
+}
+#RightShift{
+	flex-basis:70px;
+	flex-grow:1;
+}
+#Capslock{
+	flex-basis:70px;
+	flex-grow:1;
+}
+#Tab{
+	flex-basis:50px;
+	flex-grow:1;
+}
+#Backspace{
+	flex-basis:75px;
+	flex-grow:1;
+}
+#Enter{
+	flex-basis:80px;
+	flex-grow:1;
+}
+#BackSlash{
+	flex-basis:50px;
+	flex-grow:1;
+}
+
+#LeftCtrl, #Win, #LeftAlt, #RightAlt, #Fn, #RightCtrl{
+	flex-basis:44px;
+	flex-grow:1;
+}
