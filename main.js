@@ -25,14 +25,14 @@ class Main {
     }
 }
 const rows=[
-    'Backquote Digit1 Digit2 Digit3 Digit4 Digit5 Digit6 Digit7 Digit8 Digit9 Digit0 Minus Equal Backspace PrinttScreen',
-    'Tab KeyQ KeyW KeyE KeyR KeyT KeyY KeyU KeyI KeyO KeyP BracketLeft BracketRight Backslash PageUp',
-    'CapsLock KeyA KeyS KeyD KeyF KeyG KeyH KeyJ KeyK KeyL Semicolon Quote Enter PageDown',
-    'LeftShift KeyZ KeyX KeyC KeyV KeyB KeyN KeyM Comma Period Slash RightShift ArrowUp End',
-    'LeftCtrl Win LeftAlt Space RightAlt Fn RightCtrl ArrowLeft ArrowDown ArrowRight'
+    'Backquote Digit1 Digit2 Digit3 Digit4 Digit5 Digit6 Digit7 Digit8 Digit9 Digit0 Minus Equal Backspace Insert',
+    'Tab KeyQ KeyW KeyE KeyR KeyT KeyY KeyU KeyI KeyO KeyP BracketLeft BracketRight Backslash Delete',
+    'CapsLock KeyA KeyS KeyD KeyF KeyG KeyH KeyJ KeyK KeyL Semicolon Quote Enter Home',
+    'ShiftLeft KeyZ KeyX KeyC KeyV KeyB KeyN KeyM Comma Period Slash ShiftRight ArrowUp End',
+    'ControlLeft Win AltLeft Space AltRight Fn ControlRight ArrowLeft ArrowDown ArrowRight'
 ];
 const chars=([
-        '` 1 2 3 4 5 6 7 8 9 0 - = BckSpce PrtSc',
+        '` 1 2 3 4 5 6 7 8 9 0 - = BckSpce Ins',
         'Tab Q W E R T Y U I O P [ ] \\ Del',
         'CapsLock A S D F G H J K L ; \' Enter Home',
         'Shift Z X C V B N M , . / Shift Up End',
@@ -229,7 +229,7 @@ function buttonOnLeave(event){
 
 function keyDoUp(code, virtual, keyboard){
 	switch(code){
-		case 'LeftShift': 
+		case 'ShiftLeft': 
 			if (!altStatus){
 				currentLang = (currentLang+1) % 2;
 				localStorage.setItem('lang', currentLang); 
@@ -246,7 +246,7 @@ function keyDoUp(code, virtual, keyboard){
 			}; 
 			break;
 
-		case 'LeftAlt':
+		case 'AltLeft':
 				if (!shiftStatus){
 					currentLang = (currentLang+1) % 2;
 					localStorage.setItem('lang', currentLang); 
@@ -262,7 +262,7 @@ function keyDoUp(code, virtual, keyboard){
 				}
 				break;
 
-		case 'LeftCtrl':
+		case 'ControlLeft':
 				if (virtual) controlStatus = !controlStatus
 				else controlStatus = true
 				break
@@ -279,18 +279,18 @@ function keyDoUp(code, virtual, keyboard){
 function keyDoDown(code, virtual, keyboard){
 	switch(code){
 		case 'Backspace': backSpaceString(el); break;
-		case 'LeftShift': 
+		case 'ShiftLeft': 
 			if (!virtual) {
 				shiftStatus=false;  
 				change_(sh, keyboard);
 			} 
 			break;
-		case 'LeftAlt':
+		case 'AltLeft':
 			if (!virtual) {
 				altStatus=false;  
 			} 
 			break;
-		case 'LeftCtrl':
+		case 'ControlLeft':
 			if (!virtual) {
 				controlStatus=false;  
 			} 

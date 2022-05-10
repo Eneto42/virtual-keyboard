@@ -112,7 +112,7 @@ body{
 	flex-basis:270px;
 	flex-grow:1;
 }
-#LeftShift{
+#ShiftLeft{
 	flex-basis:100px;
 	flex-grow:1;
 }
@@ -141,7 +141,7 @@ body{
 	flex-grow:1;
 }
 
-#LeftCtrl, #Win, #LeftAlt, #RightAlt, #Fn, #RightCtrl{
+#ControlLeft, #Win, #AltLeft, #AltRight, #Fn, #ControlRight{
 	flex-basis:44px;
 	flex-grow:1;
 }
