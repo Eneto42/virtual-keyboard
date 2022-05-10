@@ -1,3 +1,4 @@
+alert('Не успел доделать до дедлайна, извиняюсь, пожалуйста, не проверяйте мою работу до четверга, если что, напишите в discord: Eneto#8229')
 class Main {
     constructor (parentNode){
         this.shiftStatus = true;
