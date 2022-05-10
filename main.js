@@ -29,7 +29,7 @@ const rows=[
     'Tab KeyQ KeyW KeyE KeyR KeyT KeyY KeyU KeyI KeyO KeyP BracketLeft BracketRight Backslash Delete',
     'CapsLock KeyA KeyS KeyD KeyF KeyG KeyH KeyJ KeyK KeyL Semicolon Quote Enter Home',
     'ShiftLeft KeyZ KeyX KeyC KeyV KeyB KeyN KeyM Comma Period Slash ShiftRight ArrowUp End',
-    'ControlLeft Win AltLeft Space AltRight Fn ControlRight ArrowLeft ArrowDown ArrowRight'
+    'ControlLeft MetaLeft AltLeft Space AltRight Fn ControlRight ArrowLeft ArrowDown ArrowRight'
 ];
 const chars=([
         '` 1 2 3 4 5 6 7 8 9 0 - = BckSpce Ins',
